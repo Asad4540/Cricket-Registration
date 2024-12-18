@@ -1,0 +1,281 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+body{
+    color: #4b4a4a;
+}
+
+a{
+    color: #4b4a4a;
+}
+
+h1{
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wrapper{
+    height: 100vh;
+}
+
+.hero-bg{
+    background-image: url(../images/view-stadium.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* .hero-bg img{
+    width: 200px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+} */
+
+.main-form-section{
+    padding: 5% 3%;
+}
+
+.form-view{
+    padding: 3% 5%;
+}
+
+.form-view-squad{
+    padding: 3% 10%;
+}
+
+.btn {
+    background: #DCAE3B;
+    color: #fff;
+    font-weight: bold;
+    height: 45px;
+}
+
+.main-form-section, .hero-bg {
+    transition: all 0.5s ease; /* Adjust duration and easing as needed */
+}
+
+.progress-bar{
+    background-color: #DCAE3B;
+}
+
+input[type=text]{
+    height: 45px;
+}
+
+.wrapperto-header{
+    background-image: url(../images/wrapper-two-bg.png);
+    width: 100%;
+    height: 35vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.wrapperto-header h1{
+    color: #fff;
+    font-weight: 600;
+    font-size: 4rem;
+}
+.wrappertwo p{
+    margin: 0
+}
+
+.wrappertwo h2{
+    color: #5a9799;
+}
+.footer {
+    background-color: #d4d6d8;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-bg{
+    background-image: url(../images/header-bg.png);
+}
+
+/* Table styling for print */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+table, th, td {
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f2f2f2;
+}
+@media print {
+    .no-print {
+        display: none;
+    }
+}
+
+.bg-body-tertiary{
+    position: absolute;
+    z-index: 2;
+}
+
+@media screen and (max-width: 992px) {
+    .second-form-section{
+        padding: 8%
+    }
+  }
+
+  .header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #DCAE3B;
+    color: #000;
+}
+
+.header img {
+    max-width: 250px;
+}
+
+.header h1 {
+    margin: 10px 0 0;
+}
+
+.tournament-details {
+    text-align: center;
+    padding: 20px;
+}
+
+.tournament-details h2 {
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: 700;
+
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.details-grid div {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.details-grid div h3 {
+    color: #DCAE3B;
+    margin-bottom: 10px;
+}
+
+.details-grid div p {
+    font-size: 18px;
+    color: #333;
+}
+
+.register-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.register-btn a {
+    text-decoration: none;
+    background-color: #DCAE3B;
+    color: #000;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #DCAE3B;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.Squadfooter{
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #DCAE3B;
+    color: white;
+    position: unset;
+    bottom: 0;
+    width: 100%;
+}
+
+.heading{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 991px) {
+    .details-grid{
+        grid-template-columns:unset;
+    }
+
+    .footer{
+        position: unset;
+    }
+  }
+  
+  .col-lg-2 span img{
+      max-width: 30px;
+  }
+  
+  .col-lg-2 a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .footer p{
+      margin: 0;
+  }
+  
+ .btn-sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: 1px solid gray;
+ }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
