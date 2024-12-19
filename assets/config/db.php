@@ -6,9 +6,9 @@
     use PHPMailer\PHPMailer\PHPMailer;
 
     $host = 'localhost';
-    $db = 'u198372255_vm_cricket';
-    $user = 'u198372255_vm_user_ckt';
-    $pass = 'e=md8g&u[O4G';
+    $db = 'dy_cricket';
+    $user = 'root';
+    $pass = '';
     
 
     $conn = mysqli_connect($host,$user, $pass, $db);

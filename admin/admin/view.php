@@ -92,7 +92,7 @@ try {
     <nav class="navbar bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="../assets/images/vereigen_logo.png" alt="Bootstrap" width="150px" height="auto">
+                <img src="../assets/images/dyp-logo.png" alt="Bootstrap" width="150px" height="auto">
             </a>
         </div>
     </nav>
