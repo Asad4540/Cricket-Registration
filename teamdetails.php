@@ -77,7 +77,8 @@ try {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Details</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
@@ -94,13 +95,17 @@ try {
     </nav>
 
     <div class="container">
-        
-        <div class="text-end"><a href="assets/pdf/cricket_rules.pdf" target="_blank" style="text-decoration: none;">View Rules</a> | <a onclick="printAsTable()" style="cursor: pointer;">Print</a></div>
+
+        <div class="text-end"><a href="assets/pdf/cricket_rules.pdf" target="_blank" style="text-decoration: none;">View
+                Rules</a> | <a onclick="printAsTable()" style="cursor: pointer;">Print</a></div>
         <div class="card mt-3">
             <div class="card-body">
-            <div class="text-center">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15129.747457241316!2d73.9547632!3d18.5543332!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c3c6b977d28f%3A0xaf8f4a3cad5b9baf!2sTurf%20Up%20Kharadi!5e0!3m2!1sen!2sin!4v1727456051942!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+                <div class="text-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18610.745051554!2d73.90898791268273!3d18.608688606004407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c71e08905091%3A0x51ca0d931361c1bc!2sAjeenkya%20DY%20Patil%20University!5e1!3m2!1sen!2sin!4v1734639282051!5m2!1sen!2sin"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
 
             <div class="card-body" id="printableArea">
@@ -111,34 +116,40 @@ try {
                 <div class="row">
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Company Name</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['companyname'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['companyname'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Company Linked URL</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['linkedinurl'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['linkedinurl'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Contact Person</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['contactperson'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['contactperson'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                 </div>
 
                 <div class="row mt-4">
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Phone Number</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['mobile'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['mobile'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Company Email</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['email'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['email'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Job Title</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['jobtitle'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['jobtitle'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                 </div>
 
@@ -149,62 +160,73 @@ try {
                 <div class="row">
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Captain</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['captain'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['captain'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Vice Captain</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['vicecaptain'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['vicecaptain'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 3</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player3'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player3'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 4</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player4'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player4'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 5</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player5'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player5'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 6</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player6'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player6'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 7</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player7'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player7'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 8</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player8'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player8'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
 
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 9</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player9'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player9'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 10</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player10'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player10'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                     <div class="from-group col-md-4">
                         <label for="" class="text-muted form-label">Player 11</label>
-                        <input type="text" value="<?php echo htmlspecialchars($team['player11'] ?? 'null'); ?>" class="form-control" readonly>
+                        <input type="text" value="<?php echo htmlspecialchars($team['player11'] ?? 'null'); ?>"
+                            class="form-control" readonly>
                     </div>
                 </div>
             </div>
@@ -212,8 +234,11 @@ try {
 
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     <script>
         function printAsTable() {
             console.log('clicked');

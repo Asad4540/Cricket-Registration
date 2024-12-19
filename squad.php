@@ -82,8 +82,8 @@
                                     <input type="text" class="form-control text-name" id="captain" name="captain" placeholder="Captain">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="lkcaptain" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkcaptain" name="lkcaptain"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkcaptain" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkcaptain" name="lkcaptain"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
         
@@ -94,8 +94,8 @@
                                 </div>
 
                                 <div class="form-group col-md-6">
-                                    <label for="lkvicecaptain" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkvicecaptain" name="lkvicecaptain"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkvicecaptain" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkvicecaptain" name="lkvicecaptain"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
         
@@ -106,8 +106,8 @@
                                 </div>
 
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer3" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer3" name="lkplayer3"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer3" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer3" name="lkplayer3"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
                             
@@ -117,8 +117,8 @@
                                     <input type="text" class="form-control text-name" id="player4" name="player4" placeholder="Player 4">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer4" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer4" name="lkplayer4"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer4" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer4" name="lkplayer4"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
 
@@ -128,8 +128,8 @@
                                     <input type="text" class="form-control text-name" id="player5" name="player5" placeholder="Player 5">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer5" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer5" name="lkplayer5"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer5" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer5" name="lkplayer5"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
 
@@ -139,8 +139,8 @@
                                     <input type="text" class="form-control text-name" id="player6" name="player6" placeholder="Player 6">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer6" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer6" name="lkplayer6"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer6" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer6" name="lkplayer6"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
         
@@ -150,8 +150,8 @@
                                     <input type="text" class="form-control text-name" id="player7" name="player7" placeholder="Player 7">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer7" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer7" name="lkplayer7"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer7" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer7" name="lkplayer7"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
         
@@ -161,8 +161,8 @@
                                     <input type="text" class="form-control text-name" id="player8" name="player8" placeholder="Player 8">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer8" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer8" name="lkplayer8"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer8" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer8" name="lkplayer8"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
         
@@ -173,8 +173,8 @@
                                 </div>
 
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer9" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer9" name="lkplayer9"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer9" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer9" name="lkplayer9"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
 
@@ -185,8 +185,8 @@
                                 </div>
 
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer10" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer10" name="lkplayer10"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer10" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer10" name="lkplayer10"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
 
@@ -197,8 +197,8 @@
                                 </div>
 
                                 <div class="form-group col-md-6">
-                                    <label for="lkplayer11" class="form-label text-muted">Linked In Profile</label>
-                                    <input type="text" class="form-control text-name" id="lkplayer11" name="lkplayer11"  placeholder="https://linkedin.com/personal-profile">
+                                    <label for="lkplayer11" class="form-label text-muted">Contact No</label>
+                                    <input type="text" class="form-control text-name" id="lkplayer11" name="lkplayer11"  placeholder="Enter your mobile no">
                                 </div>
                             </div>
         
@@ -320,148 +320,148 @@
                     $("#player11").after('<span class="error text-danger">This field is required</span>');
                 }
                 
-                let lkcaptain = $("#lkcaptain").val();
-                if (lkcaptain === "") {
-                    isValid = false;
-                    console.log('lkcaptain');
-                    $("#lkcaptain").addClass('is-invalid');  
-                    $("#lkcaptain").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkcaptain !== "" && !isValidURL(lkcaptain)) {
-                    isValid = false;
-                    console.log('lkcaptainurl');
-                    $("#lkcaptain").addClass('is-invalid');  
-                    $("#lkcaptain").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkcaptain = $("#lkcaptain").val();
+                // if (lkcaptain === "") {
+                //     isValid = false;
+                //     console.log('lkcaptain');
+                //     $("#lkcaptain").addClass('is-invalid');  
+                //     $("#lkcaptain").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkcaptain !== "" && !isValidURL(lkcaptain)) {
+                //     isValid = false;
+                //     console.log('lkcaptainurl');
+                //     $("#lkcaptain").addClass('is-invalid');  
+                //     $("#lkcaptain").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkvicecaptain = $("#lkvicecaptain").val();
-                if (lkvicecaptain === "") {
-                    isValid = false;
-                    console.log('lkvicecaptain');
-                    $("#lkvicecaptain").addClass('is-invalid');  
-                    $("#lkvicecaptain").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkvicecaptain !== "" && !isValidURL(lkvicecaptain)) {
-                    isValid = false;
-                    console.log('lkvicecaptainurl');
-                    $("#lkvicecaptain").addClass('is-invalid');  
-                    $("#lkvicecaptain").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkvicecaptain = $("#lkvicecaptain").val();
+                // if (lkvicecaptain === "") {
+                //     isValid = false;
+                //     console.log('lkvicecaptain');
+                //     $("#lkvicecaptain").addClass('is-invalid');  
+                //     $("#lkvicecaptain").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkvicecaptain !== "" && !isValidURL(lkvicecaptain)) {
+                //     isValid = false;
+                //     console.log('lkvicecaptainurl');
+                //     $("#lkvicecaptain").addClass('is-invalid');  
+                //     $("#lkvicecaptain").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer3 = $("#lkplayer3").val();
-                if (lkplayer3 === "") {
-                    isValid = false;
-                    console.log('lkplayer3');
-                    $("#lkplayer3").addClass('is-invalid');  
-                    $("#lkplayer3").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer3 !== "" && !isValidURL(lkplayer3)) {
-                    isValid = false;
-                    console.log('lkplayer3url');
-                    $("#lkplayer3").addClass('is-invalid');  
-                    $("#lkplayer3").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer3 = $("#lkplayer3").val();
+                // if (lkplayer3 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer3');
+                //     $("#lkplayer3").addClass('is-invalid');  
+                //     $("#lkplayer3").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer3 !== "" && !isValidURL(lkplayer3)) {
+                //     isValid = false;
+                //     console.log('lkplayer3url');
+                //     $("#lkplayer3").addClass('is-invalid');  
+                //     $("#lkplayer3").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
                 
-                let lkplayer4 = $("#lkplayer4").val();
-                if (lkplayer4 === "") {
-                    isValid = false;
-                    console.log('lkplayer4');
-                    $("#lkplayer4").addClass('is-invalid');  
-                    $("#lkplayer4").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer4 !== "" && !isValidURL(lkplayer4)) {
-                    isValid = false;
-                    console.log('lkplayer4url');
-                    $("#lkplayer4").addClass('is-invalid');  
-                    $("#lkplayer4").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer4 = $("#lkplayer4").val();
+                // if (lkplayer4 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer4');
+                //     $("#lkplayer4").addClass('is-invalid');  
+                //     $("#lkplayer4").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer4 !== "" && !isValidURL(lkplayer4)) {
+                //     isValid = false;
+                //     console.log('lkplayer4url');
+                //     $("#lkplayer4").addClass('is-invalid');  
+                //     $("#lkplayer4").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer5 = $("#lkplayer5").val();
-                if (lkplayer5 === "") {
-                    isValid = false;
-                    console.log('lkplayer5');
-                    $("#lkplayer5").addClass('is-invalid');  
-                    $("#lkplayer5").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer5 !== "" && !isValidURL(lkplayer5)) {
-                    isValid = false;
-                    console.log('lkplayer5url');
-                    $("#lkplayer5").addClass('is-invalid');  
-                    $("#lkplayer5").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer5 = $("#lkplayer5").val();
+                // if (lkplayer5 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer5');
+                //     $("#lkplayer5").addClass('is-invalid');  
+                //     $("#lkplayer5").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer5 !== "" && !isValidURL(lkplayer5)) {
+                //     isValid = false;
+                //     console.log('lkplayer5url');
+                //     $("#lkplayer5").addClass('is-invalid');  
+                //     $("#lkplayer5").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer6 = $("#lkplayer6").val();
-                if (lkplayer6 === "") {
-                    isValid = false;
-                    console.log('lkplayer6');
-                    $("#lkplayer6").addClass('is-invalid');  
-                    $("#lkplayer6").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer6 !== "" && !isValidURL(lkplayer6)) {
-                    isValid = false;
-                    console.log('lkplayer6url');
-                    $("#lkplayer6").addClass('is-invalid');  
-                    $("#lkplayer6").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer6 = $("#lkplayer6").val();
+                // if (lkplayer6 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer6');
+                //     $("#lkplayer6").addClass('is-invalid');  
+                //     $("#lkplayer6").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer6 !== "" && !isValidURL(lkplayer6)) {
+                //     isValid = false;
+                //     console.log('lkplayer6url');
+                //     $("#lkplayer6").addClass('is-invalid');  
+                //     $("#lkplayer6").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer7 = $("#lkplayer7").val();
-                if (lkplayer7 === "") {
-                    isValid = false;
-                    console.log('lkplayer7');
-                    $("#lkplayer7").addClass('is-invalid');  
-                    $("#lkplayer7").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer7 !== "" && !isValidURL(lkplayer7)) {
-                    isValid = false;
-                    console.log('lkplayer7url');
-                    $("#lkplayer7").addClass('is-invalid');  
-                    $("#lkplayer7").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer7 = $("#lkplayer7").val();
+                // if (lkplayer7 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer7');
+                //     $("#lkplayer7").addClass('is-invalid');  
+                //     $("#lkplayer7").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer7 !== "" && !isValidURL(lkplayer7)) {
+                //     isValid = false;
+                //     console.log('lkplayer7url');
+                //     $("#lkplayer7").addClass('is-invalid');  
+                //     $("#lkplayer7").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer8 = $("#lkplayer8").val();
-                if (lkplayer8 === "") {
-                    isValid = false;
-                    console.log('lkplayer8');
-                    $("#lkplayer8").addClass('is-invalid');  
-                    $("#lkplayer8").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer8 !== "" && !isValidURL(lkplayer8)) {
-                    isValid = false;
-                    console.log('lkplayer8url');
-                    $("#lkplayer8").addClass('is-invalid');  
-                    $("#lkplayer8").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer8 = $("#lkplayer8").val();
+                // if (lkplayer8 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer8');
+                //     $("#lkplayer8").addClass('is-invalid');  
+                //     $("#lkplayer8").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer8 !== "" && !isValidURL(lkplayer8)) {
+                //     isValid = false;
+                //     console.log('lkplayer8url');
+                //     $("#lkplayer8").addClass('is-invalid');  
+                //     $("#lkplayer8").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer9 = $("#lkplayer9").val();
-                if (lkplayer9 === "") {
-                    isValid = false;
-                    console.log('lkplayer9');
-                    $("#lkplayer9").addClass('is-invalid');  
-                    $("#lkplayer9").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer9 !== "" && !isValidURL(lkplayer9)) {
-                    isValid = false;
-                    console.log('lkplayer9url');
-                    $("#lkplayer9").addClass('is-invalid');  
-                    $("#lkplayer9").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer9 = $("#lkplayer9").val();
+                // if (lkplayer9 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer9');
+                //     $("#lkplayer9").addClass('is-invalid');  
+                //     $("#lkplayer9").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer9 !== "" && !isValidURL(lkplayer9)) {
+                //     isValid = false;
+                //     console.log('lkplayer9url');
+                //     $("#lkplayer9").addClass('is-invalid');  
+                //     $("#lkplayer9").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer10 = $("#lkplayer10").val();
-                if (lkplayer10 === "") {
-                    isValid = false;
-                    console.log('lkplayer10');
-                    $("#lkplayer10").addClass('is-invalid');  
-                    $("#lkplayer10").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer10 !== "" && !isValidURL(lkplayer10)) {
-                    isValid = false;
-                    console.log('lkplayer10url');
-                    $("#lkplayer10").addClass('is-invalid');  
-                    $("#lkplayer10").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer10 = $("#lkplayer10").val();
+                // if (lkplayer10 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer10');
+                //     $("#lkplayer10").addClass('is-invalid');  
+                //     $("#lkplayer10").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer10 !== "" && !isValidURL(lkplayer10)) {
+                //     isValid = false;
+                //     console.log('lkplayer10url');
+                //     $("#lkplayer10").addClass('is-invalid');  
+                //     $("#lkplayer10").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
-                let lkplayer11 = $("#lkplayer11").val();
-                if (lkplayer11 === "") {
-                    isValid = false;
-                    console.log('lkplayer11');
-                    $("#lkplayer11").addClass('is-invalid');  
-                    $("#lkplayer11").after('<span class="error text-danger">This field is required</span>');
-                }else if (lkplayer11 !== "" && !isValidURL(lkplayer11)) {
-                    isValid = false;
-                    console.log('lkplayer11url');
-                    $("#lkplayer11").addClass('is-invalid');  
-                    $("#lkplayer11").after('<span class="error text-danger">Not a linked a URL</span>');
-                }
+                // let lkplayer11 = $("#lkplayer11").val();
+                // if (lkplayer11 === "") {
+                //     isValid = false;
+                //     console.log('lkplayer11');
+                //     $("#lkplayer11").addClass('is-invalid');  
+                //     $("#lkplayer11").after('<span class="error text-danger">This field is required</span>');
+                // }else if (lkplayer11 !== "" && !isValidURL(lkplayer11)) {
+                //     isValid = false;
+                //     console.log('lkplayer11url');
+                //     $("#lkplayer11").addClass('is-invalid');  
+                //     $("#lkplayer11").after('<span class="error text-danger">Not a linked a URL</span>');
+                // }
 
                 // Prevent form submission if validation fails
                 if (!isValid) {
