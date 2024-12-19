@@ -291,17 +291,17 @@
                     $("#companyname").after('<span class="error text-danger">This field is required</span>');
                 }
 
-                let linkedinUrl = $("#linkedinurl").val().trim();
-                console.log(linkedinUrl);
-                if (linkedinUrl === "") {
-                    isValid = false;
-                    $("#linkedinurl").addClass('is-invalid');  
-                    $("#linkedinurl").after('<span class="error text-danger">This field is required</span>');
-                }else if (linkedinUrl !== "" && !isValidURL(linkedinUrl)) {
-                    isValid = false;
-                    $("#linkedinurl").addClass('is-invalid');  
-                    $("#linkedinurl").after('<span class="error text-danger">Not a linked URL</span>');
-                }
+                // let linkedinUrl = $("#linkedinurl").val().trim();
+                // console.log(linkedinUrl);
+                // if (linkedinUrl === "") {
+                //     isValid = false;
+                //     $("#linkedinurl").addClass('is-invalid');  
+                //     $("#linkedinurl").after('<span class="error text-danger">This field is required</span>');
+                // }else if (linkedinUrl !== "" && !isValidURL(linkedinUrl)) {
+                //     isValid = false;
+                //     $("#linkedinurl").addClass('is-invalid');  
+                //     $("#linkedinurl").after('<span class="error text-danger">Not a linked URL</span>');
+                // }
 
                 // Contact Person validation
                 if ($("#contactperson").val().trim() === "") {
