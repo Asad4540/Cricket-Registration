@@ -18,6 +18,7 @@
 <?php
 require('assets/config/db.php');
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 function generateToken()
 {
@@ -136,14 +137,14 @@ function sendConfirmationEmail($email, $companyname, $teamdetailsurl)
     $mail->Host = 'smtp.gmail.com';  // Replace with your SMTP server
     $mail->SMTPAuth = true;
     $mail->Username = 'asadc4540@gmail.com'; // Replace with your SMTP username
-    $mail->Password = 'Asad@45'; // Replace with your SMTP password
-    $mail->SMTPSecure = 'tls';
-    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail->Password = 'dkbnigtauaxazvqi'; // Replace with your SMTP password
+    // $mail->SMTPSecure = 'tls';
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
     $mail->Port = 587; // Set the SMTP port
 
     // Recipients
-    $mail->setFrom('asadc4540@gmail.com');
+    $mail->setFrom('asadc4540@gmail.com','Asad Chaudhary');
     $mail->addAddress($email);
 
     // Content
