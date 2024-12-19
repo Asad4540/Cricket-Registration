@@ -66,7 +66,7 @@
           <div class="logo-header" data-background-color="dark">
             <a href="../index.html" class="logo">
               <img
-                src="../assets/images/vereigen_logo__.png"
+                src="../assets/images/dyp-logo.png"
                 alt="navbar brand"
                 class="navbar-brand" width="130"
                 height="auto"
