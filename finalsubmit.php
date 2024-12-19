@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
 
 <?php
 require('assets/config/db.php');
 use PHPMailer\PHPMailer\PHPMailer;
 
-function generateToken() {
-    return bin2hex(random_bytes(8));
+function generateToken()
+{
+  return bin2hex(random_bytes(8));
 }
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    if (!isset($_POST['token'])) {
-        echo "Invalid URL";
-        return;
-    }
-    $token = $_POST['token'];
+  if (!isset($_POST['token'])) {
+    echo "Invalid URL";
+    return;
+  }
+  $token = $_POST['token'];
 
-    try {
-        $selectSql = "SELECT * FROM team WHERE token = ?";
-        $selectStmt = $conn->prepare($selectSql);
+  try {
+    $selectSql = "SELECT * FROM team WHERE token = ?";
+    $selectStmt = $conn->prepare($selectSql);
 
-        if ($selectStmt) {
-            $selectStmt->bind_param("s", $token);
-            $selectStmt->execute();
-            $result = $selectStmt->get_result();
+    if ($selectStmt) {
+      $selectStmt->bind_param("s", $token);
+      $selectStmt->execute();
+      $result = $selectStmt->get_result();
 
-            if ($result->num_rows > 0) {
-                while ($row = $result->fetch_assoc()) {
-                    $newToken = generateToken();
+      if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+          $newToken = generateToken();
 
-                    $updateSql = "UPDATE team 
+          $updateSql = "UPDATE team 
                                   SET rulesaccepted = '1', token = ?
                                   WHERE id = ?";
-                    
-                    $updateStmt = $conn->prepare($updateSql);
-                    if ($updateStmt) {
-                        $updateStmt->bind_param("si", $newToken, $row['id']);
-                        $updateStmt->execute();
 
-                        $protocol = isset($_SERVER['HTTPS']) && 
-                        $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
-                        $base_url = $protocol . $_SERVER['HTTP_HOST'] . '/';
-                        $teamdetailsurl = $base_url."cricket/teamdetails.php?token=".$newToken;
+          $updateStmt = $conn->prepare($updateSql);
+          if ($updateStmt) {
+            $updateStmt->bind_param("si", $newToken, $row['id']);
+            $updateStmt->execute();
 
-                        if ($updateStmt->affected_rows > 0) {
-                            sendConfirmationEmail($row['email'],$row['companyname'],$teamdetailsurl);
-                            echo '
+            $protocol = isset($_SERVER['HTTPS']) &&
+              $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+            $base_url = $protocol . $_SERVER['HTTP_HOST'] . '/';
+            $teamdetailsurl = $base_url . "cricket/teamdetails.php?token=" . $newToken;
+
+            if ($updateStmt->affected_rows > 0) {
+              sendConfirmationEmail($row['email'], $row['companyname'], $teamdetailsurl);
+              echo '
                                 <div class="modal fade" id="successModal" tabindex="-1" role="dialog" aria-labelledby="successModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -88,62 +92,65 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                         });
                                     });
                                 </script>';
-                                exit();
+              exit();
 
-                        } else {
-                            echo '<script>
+            } else {
+              echo '<script>
                             alert("Form Already Submitted");
                             window.location.href = "index.html";
                             </script>';
-                            exit();
-                        }
-                        $updateStmt->close();
-                    } else {
-                        echo 'Error: ' . $conn->error;
-                    }
-                }
-            } else {
-                echo '<script>
+              exit();
+            }
+            $updateStmt->close();
+          } else {
+            echo 'Error: ' . $conn->error;
+          }
+        }
+      } else {
+        echo '<script>
                 alert("Invalid URL!");
                 window.location.href = "index.html";
                 </script>';
-                exit();
-            }
-            $selectStmt->close();
-        } else {
-            echo 'Error preparing the select statement: ' . $conn->error;
-        }
-    } catch (Exception $e) {
-        echo $e->getMessage();
+        exit();
+      }
+      $selectStmt->close();
+    } else {
+      echo 'Error preparing the select statement: ' . $conn->error;
     }
+  } catch (Exception $e) {
+    echo $e->getMessage();
+  }
 }
 
-function sendConfirmationEmail($email,$companyname,$teamdetailsurl) {
-    require 'PHPMailer/Exception.php';
-    require 'PHPMailer/PHPMailer.php';
-    require 'PHPMailer/SMTP.php';
+function sendConfirmationEmail($email, $companyname, $teamdetailsurl)
+{
+  require 'PHPMailer/Exception.php';
+  require 'PHPMailer/PHPMailer.php';
+  require 'PHPMailer/SMTP.php';
 
-    $mail = new PHPMailer(true);
+  $mail = new PHPMailer(true);
 
-    try {
-        // Server settings
-        $mail->isSMTP();
-        $mail->Host = 'smtp.hostinger.com';  // Replace with your SMTP server
-        $mail->SMTPAuth = true;
-        $mail->Username = 'no-reply@vereigen-media.com'; // Replace with your SMTP username
-        $mail->Password = 'ZEmYb3;he)'; // Replace with your SMTP password
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port = 587; // Set the SMTP port
+  try {
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';  // Replace with your SMTP server
+    $mail->SMTPAuth = true;
+    $mail->Username = 'asadc4540@gmail.com'; // Replace with your SMTP username
+    $mail->Password = 'Asad@45'; // Replace with your SMTP password
+    $mail->SMTPSecure = 'tls';
+    // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
-        // Recipients
-        $mail->setFrom('no-reply@vereigen-media.com');
-        $mail->addAddress($email);
+    $mail->Port = 587; // Set the SMTP port
 
-        // Content
-        $mail->isHTML(true);
-        $mail->CharSet = 'UTF-8';
-        $mail->Subject = 'Registration Successful!';
-        $mail->Body = $mail->Body = '<html lang="en"><head>
+    // Recipients
+    $mail->setFrom('asadc4540@gmail.com');
+    $mail->addAddress($email);
+
+    // Content
+    $mail->isHTML(true);
+    $mail->CharSet = 'UTF-8';
+    $mail->Subject = 'Registration Successful!';
+    $mail->Body = $mail->Body = '<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -165,7 +172,7 @@ function sendConfirmationEmail($email,$companyname,$teamdetailsurl) {
             <tr>
               <td align="center" style="background-color: #000; padding: 0 15px;">
                 <p style="color: #ffcb48; font-size: 24px; font-weight: bold; margin: 0;">
-                  You have successfully registered for the Vereigenmedia Cricket Tournament
+                  You have successfully registered for the DY PATIL Cricket Tournament
                 </p>
               </td>
             </tr>
@@ -194,7 +201,7 @@ function sendConfirmationEmail($email,$companyname,$teamdetailsurl) {
                     <td align="center" width="50%" style="padding: 10px;">
                       <img src="https://d1csarkz8obe9u.cloudfront.net/uploads/emails/c7c72c449eceb51a369bec73fb8aa2b4521839.gif" alt="Venue Icon" width="50" style="max-width: 100%; height: auto; display: block;">
                       <p style="color: #ffcb48; font-size: 20px; font-weight: 700; margin: 10px 0 0;">Venue</p>
-                      <p style="color: #fbfbfb;font-size: 16px;margin: 0;">Turf Up Kharadi, Pune</p>
+                      <p style="color: #fbfbfb;font-size: 16px;margin: 0;">ADYPU, Pune</p>
                     </td>
                   </tr>
                 </tbody></table>
@@ -204,7 +211,7 @@ function sendConfirmationEmail($email,$companyname,$teamdetailsurl) {
             <!-- Button Section -->
             <tr>
               <td align="center">
-                <a href="'.$teamdetailsurl.'" style="background-color: #ffcb48; padding: 15px 30px; border-radius: 6px; font-size: 18px; font-weight: bold; text-align: center; color: #000; display: inline-block; margin:0;">View your details</a>
+                <a href="' . $teamdetailsurl . '" style="background-color: #ffcb48; padding: 15px 30px; border-radius: 6px; font-size: 18px; font-weight: bold; text-align: center; color: #000; display: inline-block; margin:0;">View your details</a>
               </td>
             </tr>
           </tbody></table>
@@ -214,16 +221,16 @@ function sendConfirmationEmail($email,$companyname,$teamdetailsurl) {
       <!-- Footer Section -->
       <tr>
         <td align="center" style="background-color: #000; color: #fff; padding: 20px; text-align: center; font-size: 12px;">
-          <p style="margin: 0;">301, Arrissa Avenue, Kharadi Pune, Maharashtra 411014 India</p>
-          <p style="margin: 5px 0;"><a href="https://vereigenmedia.com/privacy-policy/" style="color: #fff; text-decoration: underline;">Privacy Policy</a></p>
+          <p style="margin: 0;"> Bk, Admission Cell, Dr. D. Y. Patil School of MCA Charholi, Via, Lohegaon, Pune, Maharashtra 412105</p>
+          <p style="margin: 5px 0;"><a href="#" style="color: #fff; text-decoration: underline;">Privacy Policy</a></p>
         </td>
       </tr>
     </tbody></table>
 </body></html>';
-        $mail->send();
-      
-    } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
-    }
+    $mail->send();
+
+  } catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+  }
 }
 ?>
