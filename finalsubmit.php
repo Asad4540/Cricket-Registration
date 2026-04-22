@@ -196,7 +196,7 @@ function sendConfirmationEmail($email, $companyname, $teamdetailsurl)
                     <td align="center" width="50%" style="padding: 10px;">
                       <img src="https://d1csarkz8obe9u.cloudfront.net/uploads/emails/0fd13933271331c923087d92fc118a4a298570.gif" alt="Time Icon" width="50" style="max-width: 100%; height: auto; display: block;">
                       <p style="color: #ffcb48; font-size: 20px; font-weight: 700; margin: 10px 0 0;">Time</p>
-                      <p style="color: #fbfbfb; font-size: 16px; margin: 10px 0 0;">13th October 2024,<br> 11:00 AM - 7:00 PM</p>
+                      <p style="color: #fbfbfb; font-size: 16px; margin: 10px 0 0;">13th October 2026,<br> 11:00 AM - 7:00 PM</p>
                     </td>
                     <!-- Venue Section -->
                     <td align="center" width="50%" style="padding: 10px;">

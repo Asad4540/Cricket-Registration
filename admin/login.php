@@ -66,7 +66,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form action="login.php" method="post"
         class="relative w-[550px] h-[620px] lg:w-[400px] lg:h-[520px] p-[20px_35px] bg-[rgba(255,255,255,0.13)] rounded-[10px] backdrop-blur-[10px] border-[2px] border-[rgba(255,255,255,0.1)] shadow-[0_0_40px_rgba(8,7,16,0.6)]">
         <img src="images/logo.webp" class="mx-auto" style="width: 60%;" alt="">
-        <p class="text-4xl text-yellow-400 font-bold text-center mt-3">VM Campaigns Checker</p>
+        <p class="text-4xl text-yellow-400 font-bold text-center mt-3">DY Admin Panel </p>
             
 
         <?php if(isset($error)): ?>
