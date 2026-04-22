@@ -216,7 +216,7 @@
         </div>
         <footer class="footer m-0 Squadfooter">
             <div class="container">
-                <p class="mb-0">All rights reserved &copy; 2024</p>
+                <p class="mb-0">All rights reserved &copy; 2026</p>
             </div>
         </footer>
     </div>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 17, 2024 at 07:33 PM
+-- Generation Time: Dec 17, 2026 at 07:33 PM
 -- Server version: 10.11.10-MariaDB
 -- PHP Version: 7.2.34
 
@@ -76,7 +76,7 @@ CREATE TABLE `users` (
 
 
 INSERT INTO `users` (`id`, `username`, `email`, `password`, `token`, `created_at`) VALUES
-(1, 'admin', 'vidyadhar.sutar@vereigenmedia.com', '49fd2b485cdd4d25adbc31d87388391f', 'cff1555c02fc9dee9821eed56b2f8370', '2024-04-22 12:44:32');
+(1, 'admin', 'vidyadhar.sutar@vereigenmedia.com', '49fd2b485cdd4d25adbc31d87388391f', 'cff1555c02fc9dee9821eed56b2f8370', '2026-04-22 12:44:32');
 
 
 ALTER TABLE `team`

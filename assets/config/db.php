@@ -6,7 +6,7 @@
     use PHPMailer\PHPMailer\PHPMailer;
 
     $host = 'localhost';
-    $db = 'dy_cricket';
+    $db = 'dycricket';
     $user = 'root';
     $pass = '';
     
